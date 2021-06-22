@@ -1,0 +1,39 @@
+/* GENERAL STYLES */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background: rgb(175,103,233);
+    background: linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%);
+    font-size: 1.2rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font;
+    position: relative;
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 3rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

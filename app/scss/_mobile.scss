@@ -1,0 +1,48 @@
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1050px) {
+    .card-container {
+        margin: 120px 0;
+        flex-direction: column;
+        max-width: 90vw;
+    }
+    #left-side {
+        height: 30%;
+    } 
+    .container-img-desktop {
+        display: flex;
+    }
+
+    .box-img {
+        display: none;
+    }
+
+    .container-img-mob {
+        display: block;
+    }
+
+    .pattern-mobile {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        top: 45px;
+
+    }
+    .woman-mobile {
+        position: absolute;
+        top: -10%;
+        left: 46%; 
+        transform: translate(-50%, -50%); 
+
+    }
+
+    h1 {
+        text-align: center;
+        padding: .5rem 0 2rem 0;
+    }
+    #right-side {
+        height: 70%;
+        padding: 2rem 0 3rem 0s;
+        margin: 1rem 2rem 3rem 2rem;
+    }  
+}
