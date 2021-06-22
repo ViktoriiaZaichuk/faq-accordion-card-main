@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://github.com/ViktoriiaZaichuk/faq-accordion-card-main/blob/main/img/favicon-32x32.png?raw=true">
+  <link rel="stylesheet" href="dist\css\main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <div class="card-container">
+
+    <!-- IMAGES CONTAINER -->
+    <div id="left-side">
+      <div class="container-img-desktop">
+        <img class="woman-desk" src="https://raw.githubusercontent.com/ViktoriiaZaichuk/faq-accordion-card-main/48bb14e632a5bd5d9190da88b45d21622dd2ed14/img/illustration-woman-online-desktop.svg" alt="woman">
+      </div>
+      <div class="container-img-mob">
+        <img class="pattern-mobile" src="https://raw.githubusercontent.com/ViktoriiaZaichuk/faq-accordion-card-main/48bb14e632a5bd5d9190da88b45d21622dd2ed14/img/bg-pattern-mobile.svg" alt="pattern">
+        <img class="woman-mobile" src="https://raw.githubusercontent.com/ViktoriiaZaichuk/faq-accordion-card-main/48bb14e632a5bd5d9190da88b45d21622dd2ed14/img/illustration-woman-online-mobile.svg" alt="woman">
+      </div>
+      <img class="box-img" src="https://raw.githubusercontent.com/ViktoriiaZaichuk/faq-accordion-card-main/48bb14e632a5bd5d9190da88b45d21622dd2ed14/img/illustration-box-desktop.svg" alt="box">
+    </div>
+
+    <!-- TEXT CONTAINER -->
+    <div id="right-side">
+      <h1>FAQ</h1>
+      <div class="question-container">
+        <div class="question">
+          <p>How many team members can I invite?</p>
+          <img src="https://raw.githubusercontent.com/ViktoriiaZaichuk/faq-accordion-card-main/48bb14e632a5bd5d9190da88b45d21622dd2ed14/img/icon-arrow-down.svg" alt="arrow down"  class="arrow">
+        </div>
+        <div class="hidden">
+          <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.</p>
+        </div>
+      </div>
+      <div class="question-container">
+        <div class="question">
+          <p>What is the maximum file upload size?</p>
+          <img src="https://raw.githubusercontent.com/ViktoriiaZaichuk/faq-accordion-card-main/48bb14e632a5bd5d9190da88b45d21622dd2ed14/img/icon-arrow-down.svg" alt="arrow down"  class="arrow">
+        </div>
+        <div class="hidden">
+          <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </div>
+      </div>
+      <div class="question-container">
+        <div class="question">
+          <p>How do I reset my password?</p>
+          <img src="https://raw.githubusercontent.com/ViktoriiaZaichuk/faq-accordion-card-main/48bb14e632a5bd5d9190da88b45d21622dd2ed14/img/icon-arrow-down.svg" alt="arrow down"  class="arrow">
+        </div>
+        <div class="hidden">
+          <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</p>
+        </div>
+      </div>
+      <div class="question-container">
+        <div class="question">
+          <p>Can I cancel my subscription?</p>
+          <img src="https://raw.githubusercontent.com/ViktoriiaZaichuk/faq-accordion-card-main/48bb14e632a5bd5d9190da88b45d21622dd2ed14/img/icon-arrow-down.svg" alt="arrow down" class="arrow">
+        </div>
+        <div class="hidden">
+          <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+      </div>
+      <div class="question-container">
+        <div class="question">
+          <p>Do you provide additional support?</p>
+          <img src="https://raw.githubusercontent.com/ViktoriiaZaichuk/faq-accordion-card-main/48bb14e632a5bd5d9190da88b45d21622dd2ed14/img/icon-arrow-down.svg" alt="arrow down"  class="arrow">
+        </div>
+        <div class="hidden">
+          <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Attribution -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://codepen.io/viktoriiazaichuk">Viktoriia Zaichuk</a>.
+  </div>
+  <script>
+
+    $(".question").click(function(){ 
+        //console.log("click click!");
+        $(this).toggleClass("question-active");
+        $(this).next().slideToggle(700);
+        $(this).children("img.arrow").toggleClass("arrow-active");
+    });
+</script>
+</body>
+</html>
